@@ -63,6 +63,7 @@ function criarBalao(qtd) {
 
 function estourar(e) {
   var id_balao = e.id;
+  document.getElementById(id_balao).setAttribute("onclick","");
   document.getElementById(id_balao).src="imagens/balao_azul_pequeno_estourado.png";
   pontos(-1);
   console.log(">> Balão clicado: "+ id_balao+"\n");
